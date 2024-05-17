@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    top: -58;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+/* BOTONES */
+
+.btn-blue {
+  background-color: #144774;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.btn-yellow {
+  background-color: #f3c066;
+  border-radius: 5px;
+  padding: 15px 20px;
+  color: black;
+  font-weight: bold;
+}
+
+/* NAV */
+
+/* HERO */
+
+.hero {
+  background-image: url('/landing/nicdet-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
