@@ -89,3 +89,18 @@ h5 {
 .solid-black {
   filter: brightness(0) contrast(1000%);
 }
+
+/* FOOTER */
+
+.footer {
+  background: rgb(0, 146, 251);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 146, 251, 1) 0%,
+    rgba(21, 87, 135, 1) 100%
+  );
+  color: white;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 100;
+}
