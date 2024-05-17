@@ -24,7 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    top: -58;
+  top: -58;
 }
 
 @layer utilities {
@@ -38,8 +38,16 @@ h1 {
   font-size: 50px;
 }
 
+h4 {
+  font-size: 25px;
+}
+
 h5 {
-  font-size: 20px;
+  font-size: 23px;
+}
+
+.shadow-blue {
+  box-shadow: -15px 10px 30px rgba(0, 191, 255, 0.25);
 }
 
 /* BOTONES */
@@ -54,7 +62,7 @@ h5 {
 .btn-yellow {
   background-color: #f3c066;
   border-radius: 5px;
-  padding: 15px 20px;
+  padding: 20px 60px;
   color: black;
   font-weight: bold;
 }
@@ -64,7 +72,7 @@ h5 {
 /* HERO */
 
 .hero {
-  background-image: url('/landing/nicdet-hero.jpg');
+  background-image: url("/landing/nicdet-hero.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -74,3 +82,10 @@ h5 {
   justify-content: center;
 }
 
+.laboratorios {
+  color: #444;
+}
+
+.solid-black {
+  filter: brightness(0) contrast(1000%);
+}
