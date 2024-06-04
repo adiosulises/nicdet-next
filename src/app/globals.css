@@ -68,6 +68,22 @@ h5 {
 }
 
 /* NAV */
+.navbar {
+  font-weight: bold;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.nav-bg {
+  transition: .3s ease-in;
+}
+
+.nav-bg-active {
+  background: #144774;
+}
 
 /* HERO */
 
@@ -88,6 +104,39 @@ h5 {
 
 .solid-black {
   filter: brightness(0) contrast(1000%);
+}
+
+/* SLIDER */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  } to {
+    transform: translateX(-55%);
+  }
+}
+
+.logos {
+  overflow-x: hidden;
+  padding: 40px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos-slide {
+  display: flex;
+  width: 200%;
+  animation: 20s slide infinite linear;
+}
+
+.logo {
+  height: 400px;
+  width: 330px;
+  padding: 20px 0;
+  margin-left: 20px;
+  flex: 0 0 auto;
+  text-align: center;
+  line-height: 400px;
 }
 
 /* FOOTER */
